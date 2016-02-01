@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hku.demos.aohuijun.androiddemos">
+
+    <!-- ENTRY PARTS -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".EntryActivity"
+            android:label="@string/app_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BasicsEntryActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".DemosEntryActivity"
+            android:launchMode="singleTask" />
+
+        <!-- VALUES FOR APP: ACTIVITIES IN DIFFERENT LAUNCH MODES -->
+        <activity
+            android:name=".launchmodes.StandardActivity"
+            android:label="@string/title_activity_act_1"
+            android:launchMode="standard" />
+        <activity
+            android:name=".launchmodes.SingleTopActivity"
+            android:label="@string/title_activity_act_2"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".launchmodes.SingleTaskActivity"
+            android:label="@string/title_activity_act_3"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".launchmodes.SingleInstanceActivity"
+            android:label="@string/title_activity_act_4"
+            android:launchMode="singleInstance" />
+
+        <!-- VALUES FOR APP: ACTIVITY FOR DIFFERENT THEMES -->
+        <activity
+            android:name=".activitythemes.ThemesActivity"
+            android:label="@string/title_activity_themes_page"
+            android:launchMode="singleTask" />
+
+        <!-- VALUES FOR APP: MULTIPLE DRAWABLES PAGE -->
+        <activity
+            android:name=".multidrawables.MultiDrawablesActivity"
+            android:label="@string/title_activity_multi_drawables_page"
+            android:launchMode="singleTask" />
+
+        <!-- VALUES FOR APP: SHARING TEXT -->
+        <activity
+            android:name=".textsharing.TextSharingActivity"
+            android:label="@string/title_activity_text_sharing">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+
+        <!-- VALUES FOR APP: MZ APPS CENTER DEMO -->
+        <activity
+            android:name=".appscenter.AppsCenterActivity"
+            android:label="@string/title_activity_apps_center"
+            android:launchMode="singleTask"
+            android:theme="@style/AppsCenterTheme"
+            android:uiOptions="splitActionBarWhenNarrow" />
+
+        <!-- VALUES FOR APP: SELECTABLE GRID VIEW -->
+        <activity
+            android:name=".selectablegridview.GridViewActivity"
+            android:label="@string/title_activity_selectable_grid_view"
+            android:launchMode="singleTask" />
+
+        <!-- VALUES FOR APP: LOADABLE LIST VIEW -->
+        <activity
+            android:name=".loadablelistview.ListViewActivity"
+            android:label="@string/title_activity_loadable_list_view"
+            android:launchMode="singleTask" />
+
+        <!-- VALUES FOR APP: FLOAT WINDOW -->
+        <activity
+            android:name=".floatwindow.FloatWindowActivity"
+            android:label="@string/title_activity_float_window"
+            android:launchMode="singleTask" />
+
+        <!-- VALUES FOR APP: MEMOS -->
+        <activity
+            android:name=".memos.MemosListActivity"
+            android:label="@string/title_activity_memos_list"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".memos.NewMemoActivity"
+            android:label="@string/title_activity_new_memo"
+            android:launchMode="singleTask" />
+    </application>
+
+</manifest>

@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.DeviceDefault.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionModeCloseButtonStyle">@drawable/ic_action_cancel</item>
+    </style>
+
+    <!-- Application theme for Apps Center Demo. -->
+    <style name="AppsCenterTheme" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:actionButtonStyle">@style/AppsCenterActionButtonStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppsCenterActionOverflowButtonStyle</item>
+        <item name="android:actionBarStyle">@style/AppsCenterActionBarStyle</item>
+    </style>
+
+        <!-- Style for Apps Center Demo's action button. -->
+        <style name="AppsCenterActionButtonStyle" parent="@android:style/Widget.DeviceDefault.ActionButton">
+            <item name="android:src">@drawable/ic_sb_back</item>
+        </style>
+
+        <!-- Style for Apps Center Demo's action overflow button. -->
+        <style name="AppsCenterActionOverflowButtonStyle" parent="@android:style/Widget.DeviceDefault.ActionButton.Overflow">
+            <item name="android:src">@drawable/ic_sb_more</item>
+        </style>
+
+        <!-- Style for Apps Center Demo's action bar. -->
+        <style name="AppsCenterActionBarStyle" parent="@android:style/Widget.DeviceDefault.Light.ActionBar">
+            <item name="android:background">@drawable/titlebar_background</item>
+            <item name="android:backgroundSplit">@drawable/smartbar_background</item>
+        </style>
+
+    <!-- Application themes for "Different Themes" module. -->
+    <style name="DarkActionBarTheme" parent="@android:style/Theme.Holo"></style>
+
+    <style name="FullScreenNoActionBarTheme" parent="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+        <item name="android:background">#81CECA</item>
+    </style>
+
+    <style name="NoActionBarTheme" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:background">#9B1332</item>
+    </style>
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.hku.demos.aohuijun.androiddemos.launchmodes.StandardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        <TextView
+            android:text="@string/title_activity_act_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/title_margin" />
+        <Button
+            android:id="@+id/button_show_id_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_button_margin"
+            android:text="@string/button_show_activity_id" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/navigation_ac1_to_ac2"
+        android:text="@string/button_to_activity_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_switch_button_margin"/>
+
+    <Button
+        android:id="@+id/navigation_ac1_to_ac3"
+        android:text="@string/button_to_activity_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_switch_button_margin"/>
+
+    <Button
+        android:id="@+id/navigation_ac1_to_ac4"
+        android:text="@string/button_to_activity_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_switch_button_margin"/>
+
+    <Button
+        android:id="@+id/navigation_ac1_to_ac1"
+        android:text="@string/button_to_activity_one"
+        android:textColor="@color/color_dark_red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_switch_button_margin"/>
+</LinearLayout>
