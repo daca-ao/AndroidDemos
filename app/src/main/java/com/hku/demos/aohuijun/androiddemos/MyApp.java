@@ -23,4 +23,5 @@ public class MyApp {
     public static final int LOADABLE_LIST_VIEW = 8;
     public static final int FLOAT_WINDOW = 9;
     public static final int MEMOS = 10;
+
 }

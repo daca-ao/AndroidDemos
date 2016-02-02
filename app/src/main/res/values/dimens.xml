@@ -6,9 +6,13 @@
     <dimen name="activity_button_margin">5dp</dimen>
     <dimen name="activity_switch_button_margin">12dp</dimen>
     <dimen name="multi_drawables_item_margin">5dp</dimen>
+    <dimen name="multi_drawables_block_height">35dp</dimen>
+    <dimen name="sharing_text_item_margin">5dp</dimen>
+    <dimen name="apps_center_widget_margin">10dp</dimen>
     <dimen name="title_margin">10dp</dimen>
     <dimen name="grid_selection_size">15dp</dimen>
     
     <dimen name="multi_drawables_text_title_size">16sp</dimen>
     <dimen name="multi_drawables_text_content_size">20sp</dimen>
+    <dimen name="apps_center_content_size">25sp</dimen>
 </resources>

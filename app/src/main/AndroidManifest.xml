@@ -44,10 +44,10 @@
             android:launchMode="singleInstance" />
 
         <!-- VALUES FOR APP: ACTIVITY FOR DIFFERENT THEMES -->
+        <!-- Notice: CANNOT set singleTask -->
         <activity
             android:name=".activitythemes.ThemesActivity"
-            android:label="@string/title_activity_themes_page"
-            android:launchMode="singleTask" />
+            android:label="@string/title_activity_themes_page" />
 
         <!-- VALUES FOR APP: MULTIPLE DRAWABLES PAGE -->
         <activity

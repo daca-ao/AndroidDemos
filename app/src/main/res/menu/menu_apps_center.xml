@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.hku.demos.aohuijun.androiddemos.appscenter.AppsCenterActivity">
+    <item
+        android:id="@+id/menu_tab_main"
+        android:title="@string/title_fragment_main"
+        android:icon="@drawable/ic_action_app_center"
+        android:showAsAction="always" />
+    <item
+        android:id="@+id/menu_tab_category"
+        android:title="@string/title_fragment_category"
+        android:icon="@drawable/ic_action_category"
+        android:showAsAction="always" />
+    <item
+        android:id="@+id/menu_tab_search"
+        android:title="@string/title_fragment_search"
+        android:icon="@drawable/ic_action_search"
+        android:showAsAction="always" />
+    <item
+        android:id="@+id/menu_tab_profile"
+        android:title="@string/title_fragment_profile"
+        android:icon="@drawable/ic_action_profile"
+        android:showAsAction="always" />
 </menu>

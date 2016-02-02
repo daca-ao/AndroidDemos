@@ -52,9 +52,13 @@
     <string name="view_indicator_shape">Test Shape Drawing</string>
 
     <!-- VALUES FOR APP: SHARING TEXT -->
-    <string name="app_text_sharing">Text Sharing</string>
     <string name="title_activity_text_sharing">Text Sharing Page</string>
-    <string name="button_show_text">Show Text</string>
+    <string name="title_show_sharing_contents">Contents to be shared:</string>
+    <string name="title_enter_sharing_contents">Entering block:</string>
+    <string name="button_show_sharing_text">Show Text</string>
+    <string name="notification_empty_input">Empty input</string>
+    <string name="notification_empty_sharing">Empty sharing</string>
+    <string name="title_shared_target">Share it to: </string>
 
     <!-- VALUES FOR APP: MZ APPS CENTER DEMO -->
     <string name="title_activity_apps_center">Apps Center</string>
@@ -110,5 +114,8 @@
     <string name="title_memo_content">Content: </string>
     <string name="hint_memo_title">Type the title here. </string>
     <string name="hint_memo_content">Enter the content here. </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

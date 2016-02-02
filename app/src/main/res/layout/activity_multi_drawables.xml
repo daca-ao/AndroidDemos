@@ -15,12 +15,70 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/multi_drawables_item_margin"
         android:text="@string/view_color_by_xml"
-        android:textSize="@dimen/multi_drawables_text_title_size"/>
+        android:textSize="@dimen/multi_drawables_text_title_size" />
     <TextView
         android:id="@+id/text_view_xml"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/multi_drawables_item_margin"
         android:layout_gravity="center"
-        android:text="@string/view_indicator_text" />
+        android:text="@string/view_indicator_text"
+        android:textSize="@dimen/multi_drawables_text_content_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/multi_drawables_item_margin"
+        android:text="@string/view_color_by_coding"
+        android:textSize="@dimen/multi_drawables_text_title_size" />
+    <TextView
+        android:id="@+id/text_view_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/multi_drawables_item_margin"
+        android:layout_gravity="center"
+        android:text="@string/view_indicator_text"
+        android:textSize="@dimen/multi_drawables_text_content_size"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:background="@drawable/text_background" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/multi_drawables_item_margin"
+        android:text="@string/view_shape_by_xml"
+        android:textSize="@dimen/multi_drawables_text_title_size" />
+    <LinearLayout
+        android:id="@+id/multi_drawables_shape_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_radius_blue" >
+        <TextView
+            android:id="@+id/shape_text_xml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/multi_drawables_item_margin"
+            android:text="@string/view_indicator_shape"
+            android:textSize="@dimen/multi_drawables_text_content_size"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/multi_drawables_item_margin"
+        android:text="@string/view_shape_by_shape_drawable"
+        android:textSize="@dimen/multi_drawables_text_title_size" />
+    <LinearLayout
+        android:id="@+id/multi_drawables_shape_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/multi_drawables_block_height"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
 </LinearLayout>
