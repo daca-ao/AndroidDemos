@@ -26,17 +26,16 @@ public class ThemesActivity extends Activity {
         Button darkActionBarButton = (Button) findViewById(R.id.button_dark_action_bar);
         Button fullScreenButton = (Button) findViewById(R.id.button_full_screen);
         Button noActionBarButton = (Button) findViewById(R.id.button_no_action_bar);
-        lightActionBarButton.setOnClickListener(new OnThemeSelectedListener(THEME_LIGHT));
-        darkActionBarButton.setOnClickListener(new OnThemeSelectedListener(THEME_DARK));
-        fullScreenButton.setOnClickListener(new OnThemeSelectedListener(THEME_FULL));
-        noActionBarButton.setOnClickListener(new OnThemeSelectedListener(THEME_NO_ACTION_BAR));
+        lightActionBarButton.setOnClickListener(new OnThemeSelectListener(THEME_LIGHT));
+        darkActionBarButton.setOnClickListener(new OnThemeSelectListener(THEME_DARK));
+        fullScreenButton.setOnClickListener(new OnThemeSelectListener(THEME_FULL));
+        noActionBarButton.setOnClickListener(new OnThemeSelectListener(THEME_NO_ACTION_BAR));
     }
 
-    private class OnThemeSelectedListener implements View.OnClickListener {
-
+    private class OnThemeSelectListener implements View.OnClickListener {
         private int themeType;
 
-        public OnThemeSelectedListener(int type) {
+        public OnThemeSelectListener(int type) {
             this.themeType = type;
         }
 

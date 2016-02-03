@@ -10,7 +10,7 @@
         android:id="@+id/apps_center_search_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/apps_center_widget_margin"
+        android:layout_margin="@dimen/apps_center_search_input_margin"
         android:hint="@string/content_search"
         android:textSize="@dimen/apps_center_content_size" />
 

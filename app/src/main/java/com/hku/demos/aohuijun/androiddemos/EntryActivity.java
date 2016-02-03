@@ -14,8 +14,8 @@ public class EntryActivity extends Activity {
         setContentView(R.layout.activity_entry);
         Button basicsEntryButton = (Button) findViewById(R.id.button_entry_basics);
         Button demosEntryButton = (Button) findViewById(R.id.button_entry_demos);
-        basicsEntryButton.setOnClickListener(new OnModuleSelectedListener(this, MyApp.ENTRY_BASICS));
-        demosEntryButton.setOnClickListener(new OnModuleSelectedListener(this, MyApp.ENTRY_DEMOS));
+        basicsEntryButton.setOnClickListener(new OnModuleSelectListener(this, MyApp.ENTRY_BASICS));
+        demosEntryButton.setOnClickListener(new OnModuleSelectListener(this, MyApp.ENTRY_DEMOS));
     }
 
     @Override

@@ -77,12 +77,12 @@
     <string name="content_choice">Page #1\nChoice</string>
     <string name="content_ranking">Page #2\nRanking</string>
     <string name="content_new">Page #3\nNew</string>
-    <string name="content_topics">Page $3\nTopics</string>
+    <string name="content_topics">Page #4\nTopics</string>
     <string name="button_choice_confirm">Confirm</string>
-    <string name="item_choice_title">App Title</string>
-    <string name="item_choice_type">App Type</string>
-    <string name="item_choice_recommend">Recommend</string>
-    <string name="item_choice_more">More</string>
+    <string name="item_app_title">App Title</string>
+    <string name="item_app_type">App Type</string>
+    <string name="item_app_recommend">Recommend</string>
+    <string name="item_app_more">More</string>
 
     <!-- VALUES FOR APP: SELECTABLE GRID VIEW -->
     <string name="title_activity_selectable_grid_view">Selectable GridView</string>
@@ -114,8 +114,5 @@
     <string name="title_memo_content">Content: </string>
     <string name="hint_memo_title">Type the title here. </string>
     <string name="hint_memo_content">Enter the content here. </string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

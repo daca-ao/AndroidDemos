@@ -20,11 +20,11 @@ import com.hku.demos.aohuijun.androiddemos.textsharing.TextSharingActivity;
 /**
  * Created by aohuijun on 16/1/11.
  */
-public class OnModuleSelectedListener implements View.OnClickListener {
+public class OnModuleSelectListener implements View.OnClickListener {
     private Context mContext;
     private int mModule;
 
-    public OnModuleSelectedListener(Context ctx, int module) {
+    public OnModuleSelectListener(Context ctx, int module) {
         this.mContext = ctx;
         this.mModule = module;
     }

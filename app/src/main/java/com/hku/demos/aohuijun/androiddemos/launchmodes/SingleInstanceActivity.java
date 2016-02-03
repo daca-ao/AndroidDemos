@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.hku.demos.aohuijun.androiddemos.MyApp;
-import com.hku.demos.aohuijun.androiddemos.OnModuleSelectedListener;
+import com.hku.demos.aohuijun.androiddemos.OnModuleSelectListener;
 
 import com.hku.demos.aohuijun.androiddemos.R;
 
@@ -23,10 +23,10 @@ public class SingleInstanceActivity extends Activity {
         Button singleTopButton = (Button) findViewById(R.id.navigation_ac4_to_ac2);
         Button singleTaskButton = (Button) findViewById(R.id.navigation_ac4_to_ac3);
         Button singleInstanceButton = (Button) findViewById(R.id.navigation_ac4_to_ac4);
-        standardButton.setOnClickListener(new OnModuleSelectedListener(this, MyApp.STANDARD));
-        singleTopButton.setOnClickListener(new OnModuleSelectedListener(this, MyApp.SINGLE_TOP));
-        singleTaskButton.setOnClickListener(new OnModuleSelectedListener(this, MyApp.SINGLE_TASK));
-        singleInstanceButton.setOnClickListener(new OnModuleSelectedListener(this, MyApp.SINGLE_INSTANCE));
+        standardButton.setOnClickListener(new OnModuleSelectListener(this, MyApp.STANDARD));
+        singleTopButton.setOnClickListener(new OnModuleSelectListener(this, MyApp.SINGLE_TOP));
+        singleTaskButton.setOnClickListener(new OnModuleSelectListener(this, MyApp.SINGLE_TASK));
+        singleInstanceButton.setOnClickListener(new OnModuleSelectListener(this, MyApp.SINGLE_INSTANCE));
 
         Button showIDButton = (Button) findViewById(R.id.button_show_id_4);
         showIDButton.setOnClickListener(new View.OnClickListener() {

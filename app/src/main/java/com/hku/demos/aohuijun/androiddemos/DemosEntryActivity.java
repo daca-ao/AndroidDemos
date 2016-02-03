@@ -18,11 +18,11 @@ public class DemosEntryActivity extends Activity {
         Button floatWindowButton = (Button) findViewById(R.id.button_entry_float_window);
         Button memosButton = (Button) findViewById(R.id.button_entry_memos);
 
-        textShareButton.setOnClickListener(new OnModuleSelectedListener(this, MyApp.TEXT_SHARE));
-        appsCenterButton.setOnClickListener(new OnModuleSelectedListener(this, MyApp.APPS_CENTER));
-        selectableGridViewButton.setOnClickListener(new OnModuleSelectedListener(this, MyApp.SELECTABLE_GRID_VIEW));
-        loadableListViewButton.setOnClickListener(new OnModuleSelectedListener(this, MyApp.LOADABLE_LIST_VIEW));
-        floatWindowButton.setOnClickListener(new OnModuleSelectedListener(this, MyApp.FLOAT_WINDOW));
-        memosButton.setOnClickListener(new OnModuleSelectedListener(this, MyApp.MEMOS));
+        textShareButton.setOnClickListener(new OnModuleSelectListener(this, MyApp.TEXT_SHARE));
+        appsCenterButton.setOnClickListener(new OnModuleSelectListener(this, MyApp.APPS_CENTER));
+        selectableGridViewButton.setOnClickListener(new OnModuleSelectListener(this, MyApp.SELECTABLE_GRID_VIEW));
+        loadableListViewButton.setOnClickListener(new OnModuleSelectListener(this, MyApp.LOADABLE_LIST_VIEW));
+        floatWindowButton.setOnClickListener(new OnModuleSelectListener(this, MyApp.FLOAT_WINDOW));
+        memosButton.setOnClickListener(new OnModuleSelectListener(this, MyApp.MEMOS));
     }
 }

@@ -15,8 +15,8 @@ public class BasicsEntryActivity extends Activity {
         Button diffThemesButton = (Button) findViewById(R.id.button_entry_activity_themes);
         Button multiDrawablesButton = (Button) findViewById(R.id.button_entry_multi_drawables);
 
-        launchModesButton.setOnClickListener(new OnModuleSelectedListener(this, MyApp.LAUNCH_MODES));
-        diffThemesButton.setOnClickListener(new OnModuleSelectedListener(this, MyApp.DIFF_THEMES));
-        multiDrawablesButton.setOnClickListener(new OnModuleSelectedListener(this, MyApp.MULTI_DRAWABLES));
+        launchModesButton.setOnClickListener(new OnModuleSelectListener(this, MyApp.LAUNCH_MODES));
+        diffThemesButton.setOnClickListener(new OnModuleSelectListener(this, MyApp.DIFF_THEMES));
+        multiDrawablesButton.setOnClickListener(new OnModuleSelectListener(this, MyApp.MULTI_DRAWABLES));
     }
 }
