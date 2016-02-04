@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_list_view_select"
+        android:title="@string/menu_select_all"
+        android:showAsAction="always" />
+    <item
+        android:id="@+id/menu_list_view_un_select"
+        android:title="@string/menu_clear"
+        android:showAsAction="always" />
+</menu>

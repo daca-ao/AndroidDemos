@@ -95,6 +95,10 @@
             android:name=".floatwindow.FloatWindowActivity"
             android:label="@string/title_activity_float_window"
             android:launchMode="singleTask" />
+        <service
+            android:name=".floatwindow.FloatWindowService"
+            android:enabled="true"
+            android:exported="false" />
 
         <!-- VALUES FOR APP: MEMOS -->
         <activity
@@ -105,6 +109,11 @@
             android:name=".memos.NewMemoActivity"
             android:label="@string/title_activity_new_memo"
             android:launchMode="singleTask" />
+        <provider
+            android:name=".memos.MemosProvider"
+            android:authorities="com.hku.demos.aohuijun.androiddemos.memos.provider"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>

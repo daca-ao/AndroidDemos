@@ -18,12 +18,12 @@
 
         <!-- Style for Apps Center Demo's action button. -->
         <style name="AppsCenterActionButtonStyle" parent="@android:style/Widget.DeviceDefault.ActionButton">
-            <item name="android:src">@drawable/ic_sb_back</item>
+            <item name="android:src">@drawable/ic_smartbar_back</item>
         </style>
 
         <!-- Style for Apps Center Demo's action overflow button. -->
         <style name="AppsCenterActionOverflowButtonStyle" parent="@android:style/Widget.DeviceDefault.ActionButton.Overflow">
-            <item name="android:src">@drawable/ic_sb_more</item>
+            <item name="android:src">@drawable/ic_smartbar_more</item>
         </style>
 
         <!-- Style for Apps Center Demo's action bar. -->
