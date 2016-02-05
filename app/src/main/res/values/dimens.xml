@@ -23,11 +23,15 @@
     <!-- Params of selectable grid view. -->
     <dimen name="grid_view_selector_size">15dp</dimen>
     <!-- Params of loadable list view. -->
-    <dimen name="list_view_margin">5dp</dimen>
+    <dimen name="list_view_margin_size">5dp</dimen>
+    <dimen name="list_view_minimum_height">100dp</dimen>
+    <!-- Params of float window. -->
+    <dimen name="float_window_margin">5dp</dimen>
 
     <dimen name="multi_drawables_text_title_size">16sp</dimen>
     <dimen name="multi_drawables_text_content_size">20sp</dimen>
     <dimen name="apps_center_content_size">25sp</dimen>
     <dimen name="apps_center_app_title_size">18sp</dimen>
     <dimen name="list_view_text_size">18sp</dimen>
+    <dimen name="float_window_text_size">25sp</dimen>
 </resources>

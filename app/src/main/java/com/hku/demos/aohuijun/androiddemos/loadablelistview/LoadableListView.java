@@ -57,7 +57,7 @@ public class LoadableListView extends ListView implements AbsListView.OnScrollLi
             mOnLoadCaller.onLoadMore();
     }
 
-    private void stopLoadMore() {
+    public void stopLoadMore() {
         if (isLoading) {
             isLoading = false;
             mFooterView.setState(LoadableFooterView.STATE_IDLE);
@@ -78,7 +78,8 @@ public class LoadableListView extends ListView implements AbsListView.OnScrollLi
                 break;
             case MotionEvent.ACTION_MOVE:
                 deltaY = ev.getY() - mCurrentY;
-                if (getLastVisiblePosition() == mTotalItemCount - 1 && (mFooterView.getBottomMargin() > 0 || deltaY < 0)) {
+                if (getLastVisiblePosition() == mTotalItemCount - 1 &&
+                        (mFooterView.getBottomMargin() > 0 || deltaY < 0)) {
                     if (mFooterView.getState() == LoadableFooterView.STATE_IDLE)
                         updateFooterStatus(-deltaY);
                 }
@@ -106,7 +107,7 @@ public class LoadableListView extends ListView implements AbsListView.OnScrollLi
     @Override
     public void onScrollStateChanged(AbsListView view, int scrollState) {
         if (scrollState == SCROLL_STATE_IDLE) {
-            if (!isScrolledToBottom && !isLoading && deltaY < 0)
+            if (isScrolledToBottom && !isLoading && deltaY < 0)
                 startLoadMore();
         }
     }

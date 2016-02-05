@@ -97,6 +97,7 @@
     <string name="status_pull_up_to_load">Pull up to load more. </string>
     <string name="status_release_to_load">Release to load more. </string>
     <string name="status_loading">Loading…</string>
+    <string name="status_finish_loading">Finish loading. </string>
 
     <!-- VALUES FOR APP: FLOAT WINDOW -->
     <string name="title_activity_float_window">Create Float Window</string>
@@ -104,6 +105,7 @@
     <string name="float_window_close">Close Flow Window</string>
     <string name="float_window_text">Float Window</string>
     <string name="float_window_hint">This Window</string>
+    <string name="float_window_closed">Window closed. </string>
 
     <!-- VALUES FOR APP: MEMOS -->
     <string name="title_activity_memos_list">Memos</string>

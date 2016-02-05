@@ -19,7 +19,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="@dimen/list_view_margin"
+        android:layout_margin="@dimen/list_view_margin_size"
         android:src="@drawable/ic_selector_un_selected"
         android:visibility="invisible" />
 </RelativeLayout>

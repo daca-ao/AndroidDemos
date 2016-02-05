@@ -8,13 +8,13 @@
         android:id="@+id/footer_view_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/list_view_margin"
-        android:paddingBottom="@dimen/list_view_margin" >
+        android:paddingTop="@dimen/list_view_margin_size"
+        android:paddingBottom="@dimen/list_view_margin_size" >
         <TextView
             android:id="@+id/footer_view_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/list_view_margin"
+            android:layout_margin="@dimen/list_view_margin_size"
             android:layout_centerInParent="true"
             android:text="@string/status_pull_up_to_load"
             android:textSize="@dimen/list_view_text_size" />
@@ -25,7 +25,7 @@
             android:layout_centerInParent="true"
             android:layout_toLeftOf="@id/footer_view_text"
             android:layout_toStartOf="@id/footer_view_text"
-            android:padding="@dimen/list_view_margin"
+            android:padding="@dimen/list_view_margin_size"
             android:src="@drawable/loadable_pull_up_arrow" />
         <ImageView
             android:id="@+id/footer_view_progress_bar"
@@ -34,7 +34,7 @@
             android:layout_centerInParent="true"
             android:layout_toLeftOf="@id/footer_view_text"
             android:layout_toStartOf="@id/footer_view_text"
-            android:padding="@dimen/list_view_margin"
+            android:padding="@dimen/list_view_margin_size"
             android:src="@drawable/loadable_progress_bar"
             android:visibility="gone" />
     </RelativeLayout>

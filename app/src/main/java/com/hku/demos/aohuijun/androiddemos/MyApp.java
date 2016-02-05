@@ -9,10 +9,6 @@ public class MyApp {
     public static final int ENTRY_DEMOS = 1;
 
     public static final int LAUNCH_MODES = 2;
-    public static final int STANDARD = -1;
-    public static final int SINGLE_TOP = -2;
-    public static final int SINGLE_TASK = -3;
-    public static final int SINGLE_INSTANCE = -4;
 
     public static final int DIFF_THEMES = 3;
     public static final int MULTI_DRAWABLES = 4;
@@ -24,4 +20,11 @@ public class MyApp {
     public static final int FLOAT_WINDOW = 9;
     public static final int MEMOS = 10;
 
+    public static final int STANDARD = -1;
+    public static final int SINGLE_TOP = -2;
+    public static final int SINGLE_TASK = -3;
+    public static final int SINGLE_INSTANCE = -4;
+
+    public static final int FLOAT_WINDOW_INIT_X = 20;
+    public static final int FLOAT_WINDOW_INIT_Y = 20;
 }

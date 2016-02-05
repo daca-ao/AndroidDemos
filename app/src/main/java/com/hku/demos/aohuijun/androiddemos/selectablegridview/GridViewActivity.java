@@ -93,7 +93,7 @@ public class GridViewActivity extends Activity
 
     @Override
     public boolean onCreateActionMode(ActionMode mode, Menu menu) {
-        View v = LayoutInflater.from(this).inflate(R.layout.item_selectable_list_view_count, null);
+        View v = LayoutInflater.from(this).inflate(R.layout.item_selectable_grid_view_count, null);
         mSelectedCountView = (TextView) v.findViewById(R.id.list_view_selected_count);
         mSelectedCountView.setText(formatString(mAdapter.getSelectedCount()));
         mode.setCustomView(v);

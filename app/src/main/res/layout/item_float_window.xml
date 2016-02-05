@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/float_window_margin"
+    android:gravity="center"
+    android:background="@color/colorAccent">
+
+    <com.hku.demos.aohuijun.androiddemos.floatwindow.FloatWindowTextView
+        android:id="@+id/float_window_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/float_window_text"
+        android:textSize="@dimen/float_window_text_size"
+        android:textStyle="bold"
+        android:clickable="true" />
+    <Button
+        android:id="@+id/float_window_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/float_window_close" />
+</LinearLayout>
