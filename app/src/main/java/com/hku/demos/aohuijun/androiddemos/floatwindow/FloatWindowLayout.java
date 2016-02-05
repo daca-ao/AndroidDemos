@@ -19,8 +19,11 @@ import java.lang.reflect.Field;
  */
 public class FloatWindowLayout extends LinearLayout implements View.OnClickListener {
 
+    //  Delta values between MotionEvents and window position
     private float deltaX, deltaY;
+    //  Manage the window's layout parameters
     private WindowManager mWindowManager;
+    //  Window's layout parameters
     private WindowManager.LayoutParams mLayoutParams;
     private OnFloatWindowCallback mCallback;
     private static int mStatusBarHeight;

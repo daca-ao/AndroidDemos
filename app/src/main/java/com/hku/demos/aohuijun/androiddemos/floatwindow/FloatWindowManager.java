@@ -41,12 +41,18 @@ public class FloatWindowManager {
 
     private void initLayoutParams() {
         mLayoutParams = new WindowManager.LayoutParams();
-        mLayoutParams.type = WindowManager.LayoutParams.TYPE_APPLICATION;   //  NOTICE
+        //  Set window type
+        mLayoutParams.type = WindowManager.LayoutParams.TYPE_APPLICATION;   //  NOTICE THE TYPE
+        //  Set background as transparent
         mLayoutParams.format = PixelFormat.RGBA_8888;
+        //  Set not focusable (Visible parent Activity can have operations)
         mLayoutParams.flags = WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;
+        //  Set initial gravity of the window
         mLayoutParams.gravity = Gravity.START | Gravity.TOP;
+        //  Set initial position of the window
         mLayoutParams.x = MyApp.FLOAT_WINDOW_INIT_X;
         mLayoutParams.y = MyApp.FLOAT_WINDOW_INIT_Y;
+        //  Set the size of window layout
         mLayoutParams.width = WindowManager.LayoutParams.WRAP_CONTENT;
         mLayoutParams.height = WindowManager.LayoutParams.WRAP_CONTENT;
     }
