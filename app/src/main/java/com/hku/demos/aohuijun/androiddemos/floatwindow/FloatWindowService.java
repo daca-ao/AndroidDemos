@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.hku.demos.aohuijun.androiddemos.MyApp;
 import com.hku.demos.aohuijun.androiddemos.R;
@@ -73,6 +74,9 @@ public class FloatWindowService extends Service implements View.OnTouchListener,
     @Override
     public void onDestroy() {
         super.onDestroy();
+        if (mFloatWindowLayout != null) {
+            mWindowManager.removeView(mFloatWindowLayout);
+        }
     }
 
     @Override
@@ -104,6 +108,16 @@ public class FloatWindowService extends Service implements View.OnTouchListener,
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.float_window_text:
+                Toast.makeText(getApplicationContext(), 
+                        getResources().getString(R.string.float_window_hint), 
+                        Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.float_window_button:
+                Intent closeIntent = new Intent();
+                closeIntent.setClass(getApplicationContext(), FloatWindowService.class);
+                stopService(closeIntent);
+                break;
             default:
                 break;
         }

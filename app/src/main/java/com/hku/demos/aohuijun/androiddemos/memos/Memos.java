@@ -3,7 +3,7 @@ package com.hku.demos.aohuijun.androiddemos.memos;
 /**
  * Created by aohuijun on 16/2/3.
  */
-public class Memo {
+public class Memos {
     public static final String _ID = "_id";
     public static final String _MEMO_TITLE = "_title";
     public static final String _MEMO_CONTENT = "_content";
