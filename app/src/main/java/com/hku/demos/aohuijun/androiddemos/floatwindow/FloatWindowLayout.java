@@ -46,8 +46,8 @@ public class FloatWindowLayout extends LinearLayout implements View.OnClickListe
                 break;
             case MotionEvent.ACTION_MOVE:
                 Log.d("TOUCH", "MOVE");
-                mLayoutParams.x = (int) (event.getX() - deltaX);
-                mLayoutParams.y = (int) (event.getY() - deltaY);
+                mLayoutParams.x = (int) (event.getRawX() - deltaX);
+                mLayoutParams.y = (int) (event.getRawY() - deltaY) - getStatusBarHeight();
                 mWindowManager.updateViewLayout(this, mLayoutParams);
                 break;
             case MotionEvent.ACTION_UP:

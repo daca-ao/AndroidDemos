@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.os.IBinder;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -81,6 +82,27 @@ public class FloatWindowService extends Service implements View.OnTouchListener,
 
     @Override
     public boolean onTouch(View v, MotionEvent event) {
+        switch (event.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                Log.d("TOUCH", "DOWN");
+                deltaX = event.getX();
+                deltaY = event.getY();
+                break;
+            case MotionEvent.ACTION_MOVE:
+                Log.d("TOUCH", "MOVE");
+                mLayoutParams.x = (int) (event.getRawX() - deltaX);
+                mLayoutParams.y = (int) (event.getRawY() - deltaY) - getStatusBarHeight();
+                mWindowManager.updateViewLayout(mFloatWindowLayout, mLayoutParams);
+                break;
+            case MotionEvent.ACTION_UP:
+                Log.d("TOUCH", "UP");
+                Toast.makeText(getApplicationContext(),
+                        getResources().getString(R.string.float_window_hint),
+                        Toast.LENGTH_SHORT).show();
+                break;
+            default:
+                break;
+        }
         return false;
     }
 

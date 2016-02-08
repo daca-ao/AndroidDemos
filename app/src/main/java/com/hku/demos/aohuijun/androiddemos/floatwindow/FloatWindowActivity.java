@@ -31,18 +31,26 @@ public class FloatWindowActivity extends Activity implements View.OnClickListene
                 /**
                  * Method 1: Start a new Service with a layout.
                  */
-                Intent startIntent = new Intent();
+//                Intent startIntent = new Intent();
+//                startIntent.setClass(FloatWindowActivity.this, FloatWindowService.class);
+//                startService(startIntent);
                 /**
                  * Method 2: Create & inflate a simple self-defined LinearLayout.
                  */
+                mFloatWindowManager.createFloatWindow(this);
+                mFloatWindowManager.getFloatWindowInstance().setOnFloatWindowCallback(this);
                 break;
             case R.id.float_window_close_button:
                 /**
                  * Method 1: Directly stop the service.
-                 */
+//                 */
+//                Intent closeIntent = new Intent();
+//                closeIntent.setClass(FloatWindowActivity.this, FloatWindowService.class);
+//                stopService(closeIntent);
                 /**
                  * Method 2: Remove the LinearLayout.
                  */
+                mFloatWindowManager.removeFloatWindow(this);
                 break;
             default:
                 break;
