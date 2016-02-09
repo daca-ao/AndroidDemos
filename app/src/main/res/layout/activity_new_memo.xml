@@ -1,12 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.hku.demos.aohuijun.androiddemos.memos.NewMemoActivity">
+    tools:context="com.hku.demos.aohuijun.androiddemos.memos.NewMemoActivity"
+    android:fillViewport="false">
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/memos_vertical_margin"
+            android:layout_marginRight="@dimen/memos_vertical_margin"
+            android:layout_marginTop="@dimen/memos_horizontal_margin"
+            android:layout_marginBottom="@dimen/memos_horizontal_margin"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/title_memo_title"
+                android:textSize="@dimen/memo_content_size"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/memos_title_input_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:hint="@string/hint_memo_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/memos_vertical_margin"
+            android:layout_marginRight="@dimen/memos_vertical_margin"
+            android:layout_marginTop="@dimen/memos_horizontal_margin"
+            android:layout_marginBottom="@dimen/memos_horizontal_margin"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/title_memo_content"
+                android:textSize="@dimen/memo_content_size"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/memos_content_input_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:hint="@string/hint_memo_content"
+                android:inputType="textMultiLine"
+                android:singleLine="false" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

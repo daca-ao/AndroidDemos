@@ -6,7 +6,7 @@
     <!-- Params of Entries. -->
     <dimen name="entry_button_margin">5dp</dimen>
     <dimen name="activity_button_margin">5dp</dimen>
-    <!-- Param of Launch Modes. -->
+    <!-- Params of Launch Modes. -->
     <dimen name="title_margin">10dp</dimen>
     <dimen name="activity_switch_button_margin">12dp</dimen>
     <!-- Params of Multi-drawables. -->
@@ -27,6 +27,9 @@
     <dimen name="list_view_minimum_height">100dp</dimen>
     <!-- Params of float window. -->
     <dimen name="float_window_margin">5dp</dimen>
+    <!-- Params of Memos Demo. -->
+    <dimen name="memos_horizontal_margin">5dp</dimen>
+    <dimen name="memos_vertical_margin">15dp</dimen>
 
     <dimen name="multi_drawables_text_title_size">16sp</dimen>
     <dimen name="multi_drawables_text_content_size">20sp</dimen>
@@ -34,4 +37,6 @@
     <dimen name="apps_center_app_title_size">18sp</dimen>
     <dimen name="list_view_text_size">18sp</dimen>
     <dimen name="float_window_text_size">25sp</dimen>
+    <dimen name="memo_title_size">20sp</dimen>
+    <dimen name="memo_content_size">16sp</dimen>
 </resources>
