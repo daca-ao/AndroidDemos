@@ -81,6 +81,7 @@ public class MemosListActivity extends Activity implements AdapterView.OnItemCli
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        mAdapter.getCursor().close();
     }
 
     private class MemoContentObserver extends ContentObserver {
@@ -97,6 +98,8 @@ public class MemosListActivity extends Activity implements AdapterView.OnItemCli
         @Override
         public void onChange(boolean selfChange) {
             super.onChange(selfChange);
+            mCursor.requery();
+            mAdapter.swapCursor(mCursor);
         }
     }
 }
