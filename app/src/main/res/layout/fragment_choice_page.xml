@@ -1,15 +1,9 @@
-<LinearLayout
+<ListView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".appscenter.fragment.mainpageitem.ChoicePageFragment"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:id="@+id/apps_center_choice_list_view"
+    android:gravity="center" />
 
-    <ListView
-        android:id="@+id/apps_center_choice_list_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-</LinearLayout>

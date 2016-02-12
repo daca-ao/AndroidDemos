@@ -1,19 +1,8 @@
-<LinearLayout
+<ListView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.hku.demos.aohuijun.androiddemos.appscenter.fragment.mainpageitem.RankPageFragment"
-    android:orientation="vertical"
-    android:gravity="center" >
-
-    <TextView
-        android:id="@+id/apps_center_rank_content"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/content_ranking"
-        android:textSize="@dimen/apps_center_content_size"
-        android:textStyle="bold"
-        android:clickable="true" />
-
-</LinearLayout>
+    android:id="@+id/apps_center_rank_list_view"
+    android:gravity="center" />

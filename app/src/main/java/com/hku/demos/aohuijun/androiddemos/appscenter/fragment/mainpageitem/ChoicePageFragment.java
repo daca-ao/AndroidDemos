@@ -153,7 +153,7 @@ public class ChoicePageFragment extends Fragment implements AdapterView.OnItemCl
                 case TYPE_ITEM:
                     holder.appTitle.setText("App Title " + getItem(position)
                             + ", Group " + getGroup(position));
-                    holder.appCategory.setText("Category " + getItem(position));
+                    holder.appCategory.setText("Category " + getGroup(position));
                     holder.confirmButton.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
