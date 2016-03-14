@@ -59,7 +59,6 @@ public class NewMemoActivity extends Activity {
         super.onBackPressed();
         Intent intent = getIntent();
         String memoTitle = mMemoTitleText.getText().toString();
-        long memoTime = intent.getLongExtra(Memos._UPDATE_TIME, 0);
         String memoContent = mMemoContentText.getText().toString();
         if (memoTitle.equals("") && !memoContent.equals("")) {
             memoTitle = "*Empty Title";
