@@ -61,7 +61,7 @@ public class MemosProvider extends ContentProvider {
         //  Handle requests to insert a new row.
         Uri newUri;
         SQLiteDatabase database = mMemosDBHelper.getWritableDatabase();
-        long newMemoID = database.insert(Memos.TABLE_NAME, Memos._ID, values);
+        int newMemoID = (int) database.insert(Memos.TABLE_NAME, Memos._ID, values);
         if (newMemoID < 0)
             throw new SQLiteException("Unable to insert " + values + " for " + newMemoID);
         switch (mUriMatcher.match(uri)) {

@@ -21,20 +21,18 @@ import com.hku.demos.aohuijun.androiddemos.R;
 public class MemosListActivity extends Activity implements AdapterView.OnItemClickListener {
 
     private Uri mContentUri = Uri.parse(Memos.CONTENT_URI);
-    private ListView mMemosListView;
     private MemosListAdapter mAdapter;
-    private ContentResolver mResolver;
     private Cursor mCursor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_memos_list);
-        mResolver = getContentResolver();
+        ContentResolver mResolver = getContentResolver();
         mResolver.registerContentObserver(mContentUri, true, new MemoContentObserver(new Handler()));
         mCursor = mResolver.query(mContentUri, null, null, null, null);
         mAdapter = new MemosListAdapter(this, mCursor, CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
-        mMemosListView = (ListView) findViewById(R.id.memos_list_view);
+        ListView mMemosListView = (ListView) findViewById(R.id.memos_list_view);
         mMemosListView.setAdapter(mAdapter);
         mMemosListView.setOnItemClickListener(this);
     }
@@ -63,9 +61,11 @@ public class MemosListActivity extends Activity implements AdapterView.OnItemCli
         }
         int memoID = mCursor.getInt(mCursor.getColumnIndex(Memos._ID));
         String memoTitle = mCursor.getString(mCursor.getColumnIndex(Memos._MEMO_TITLE));
+        long memoTime = mCursor.getLong(mCursor.getColumnIndex(Memos._UPDATE_TIME));
         String memoContent = mCursor.getString(mCursor.getColumnIndex(Memos._MEMO_CONTENT));
         Intent intent = new Intent(action, ContentUris.withAppendedId(uri,memoID));
         intent.putExtra(Memos._MEMO_TITLE, memoTitle);
+        intent.putExtra(Memos._UPDATE_TIME, memoTime);
         intent.putExtra(Memos._MEMO_CONTENT, memoContent);
         return intent;
     }

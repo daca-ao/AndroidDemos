@@ -13,6 +13,12 @@
         android:textSize="@dimen/memo_title_size"
         android:textStyle="bold" />
     <TextView
+        android:id="@+id/memos_text_view_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/memos_horizontal_margin"
+        android:textSize="@dimen/memo_time_size" />
+    <TextView
         android:id="@+id/memos_text_view_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

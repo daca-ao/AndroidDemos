@@ -38,5 +38,6 @@
     <dimen name="list_view_text_size">18sp</dimen>
     <dimen name="float_window_text_size">25sp</dimen>
     <dimen name="memo_title_size">20sp</dimen>
+    <dimen name="memo_time_size">15sp</dimen>
     <dimen name="memo_content_size">16sp</dimen>
 </resources>

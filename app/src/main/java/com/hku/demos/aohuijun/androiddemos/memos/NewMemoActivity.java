@@ -59,12 +59,13 @@ public class NewMemoActivity extends Activity {
         super.onBackPressed();
         Intent intent = getIntent();
         String memoTitle = mMemoTitleText.getText().toString();
+        long memoTime = intent.getLongExtra(Memos._UPDATE_TIME, 0);
         String memoContent = mMemoContentText.getText().toString();
         if (memoTitle.equals("") && !memoContent.equals("")) {
             memoTitle = "*Empty Title";
             Toast.makeText(getApplicationContext(), "Empty Title", Toast.LENGTH_SHORT).show();
         }
-        ContentValues contentValues = setContentValues(memoTitle, memoContent);
+        ContentValues contentValues = setContentValues(memoTitle, System.currentTimeMillis(), memoContent);
         if (intent.getAction().equals(Memos.ACTION_VIEW_MEMO)) {
             if (memoContent.equals("") && memoTitle.equals("")) {
                 //  EMPTY MEMO: DELETE
@@ -87,10 +88,11 @@ public class NewMemoActivity extends Activity {
         Toast.makeText(getApplicationContext(), "Memo created. ", Toast.LENGTH_SHORT).show();
     }
 
-    private ContentValues setContentValues(String titleString, String contentString) {
+    private ContentValues setContentValues(String titleString, Long time, String contentString) {
         ContentValues contentValues = new ContentValues();
         contentValues.put(Memos._MEMO_TITLE, titleString);
         contentValues.put(Memos._MEMO_CONTENT, contentString);
+        contentValues.put(Memos._UPDATE_TIME, time);
         return contentValues;
     }
 }

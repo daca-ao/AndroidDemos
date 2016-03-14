@@ -15,8 +15,8 @@ public class Memos {
                                                     " (" +
                                                     _ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                                                     _MEMO_TITLE + " TEXT, " +
-                                                    _MEMO_CONTENT + " TEXT" +
-//                                                    _UPDATE_TIME + " VARCHAR(255)" +
+                                                    _MEMO_CONTENT + " TEXT, " +
+                                                    _UPDATE_TIME + " LONG" +
                                                     ")";
     public static final int MEMO_DIR = 0;
     public static final int MEMO_ITEM = 1;
@@ -24,4 +24,5 @@ public class Memos {
     public static final String CONTENT_TYPE_PREFIX_ITEM = "vnd.android.cursor.item/vnd.";
     public static final String ACTION_CREATE_MEMO = "com.hku.demos.aohuijun.androiddemos.memos.action.CREATE_MEMO";
     public static final String ACTION_VIEW_MEMO = "com.hku.demos.aohuijun.androiddemos.memos.action.VIEW_MEMO";
+    public static final int MEMO_CONTENT_LENGTH = 10;
 }
